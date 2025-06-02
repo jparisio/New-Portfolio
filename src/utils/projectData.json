@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "project": "SPA Website",
+    "category": "Full Stack",
+    "client": "SPA",
+    "year": "2025",
+    "link": "/projects/dema-website"
+  },
+  {
+    "id": 2,
+    "project": "E-Commerce Platform",
+    "category": "Full Stack",
+    "client": "TechCorp",
+    "year": "2024",
+    "link": "/projects/ecommerce"
+  },
+  {
+    "id": 3,
+    "project": "Portfolio",
+    "category": "Dev",
+    "client": "Personal",
+    "year": "2024",
+    "link": "/projects/portfolio"
+  },
+  {
+    "id": 4,
+    "project": "Holo",
+    "category": "Dev",
+    "client": "Personal",
+    "year": "2024",
+    "link": "/projects/portfolio"
+  },
+  {
+    "id": 5,
+    "project": "Apple to Spotify",
+    "category": "Dev",
+    "client": "Personal",
+    "year": "2024",
+    "link": "/projects/portfolio"
+  },
+  {
+    "id": 6,
+    "project": "C Compiler",
+    "category": "Dev",
+    "client": "Personal",
+    "year": "2024",
+    "link": "/projects/portfolio"
+  }
+]
