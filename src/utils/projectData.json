@@ -5,46 +5,54 @@
     "category": "Full Stack",
     "client": "SPA",
     "year": "2025",
-    "link": "/projects/dema-website"
+    "link": "https://spa-git-main-justin-parisios-projects.vercel.app/"
   },
   {
     "id": 2,
-    "project": "E-Commerce Platform",
+    "project": "Knot",
     "category": "Full Stack",
-    "client": "TechCorp",
-    "year": "2024",
-    "link": "/projects/ecommerce"
+    "client": "Personal",
+    "year": "2025",
+    "link": "https://github.com/jparisio/knot"
   },
   {
     "id": 3,
-    "project": "Portfolio",
+    "project": "Filmdle",
     "category": "Dev",
     "client": "Personal",
-    "year": "2024",
-    "link": "/projects/portfolio"
+    "year": "2023",
+    "link": "https://github.com/jparisio/filmdle"
   },
   {
     "id": 4,
     "project": "Holo",
     "category": "Dev",
-    "client": "Personal",
+    "client": "Group",
     "year": "2024",
-    "link": "/projects/portfolio"
+    "link": "https://github.com/jparisio/holo"
   },
   {
     "id": 5,
-    "project": "Apple to Spotify",
+    "project": "Altern",
     "category": "Dev",
     "client": "Personal",
-    "year": "2024",
-    "link": "/projects/portfolio"
+    "year": "2025",
+    "link": "https://github.com/jparisio/altern"
   },
   {
     "id": 6,
     "project": "C Compiler",
     "category": "Dev",
+    "client": "Group",
+    "year": "2024",
+    "link": "https://github.com/BitPingu/cis4650-c3"
+  },
+  {
+    "id": 7,
+    "project": "Game Demo",
+    "category": "Dev",
     "client": "Personal",
     "year": "2024",
-    "link": "/projects/portfolio"
+    "link": "https://github.com/jparisio/Game-Demo-project-S-"
   }
 ]

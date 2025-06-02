@@ -13,7 +13,7 @@ export default function Home() {
       <p className="uppercase text-sm md:text-base lg:text-lg xl:text-xl mt-5 text-center max-w-2xl">
         <AnimText
           text={
-            "TORONTO NATIVE, NEW GRAD SOFTWARE DEVELOPER SPECIALIZING IN CRAFTING SCALABLE, ELEGANT APPLICATIONS WITH A FOCUS ON CLEAN CODE AND USER-CENTRIC DESIGN."
+            "TORONTO NATIVE, FIFTH YEAR SOFTWARE DEVELOPER SPECIALIZING IN CRAFTING SCALABLE, ELEGANT APPLICATIONS WITH A FOCUS ON CLEAN CODE AND USER-CENTRIC DESIGN."
           }
           offset={0.5}
         />
