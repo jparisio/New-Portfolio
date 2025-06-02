@@ -22,21 +22,26 @@ export default function Home() {
           />
         </p>
       </div>
-      <div className="flex gap-4">
-        <a
-          href="https://www.instagram.com/justin.parisio/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <AnimText text={"@INSTAGRAM"} />
-        </a>
-        <a
-          href="https://github.com/jparisio"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <AnimText text={"@GITHUB"} />
-        </a>
+      <div className="flex justify-between md:justify-between items-center w-full ">
+        <p className="text-xs hidden md:block">
+          <AnimText text={"© 2025 Justin Parisio™"} offset={0.6} />
+        </p>
+        <div className="flex gap-4">
+          <a
+            href="https://www.instagram.com/justin.parisio/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <AnimText text={"@INSTAGRAM"} offset={0.6} />
+          </a>
+          <a
+            href="https://github.com/jparisio"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <AnimText text={"@GITHUB"} offset={0.6} />
+          </a>
+        </div>
       </div>
     </motion.main>
   );
