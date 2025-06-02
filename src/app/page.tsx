@@ -22,7 +22,7 @@ export default function Home() {
           />
         </p>
       </div>
-      <div className="flex justify-between md:justify-between items-center w-full ">
+      <div className="flex justify-center md:justify-between items-center w-full ">
         <p className="text-xs hidden md:block">
           <AnimText text={"© 2025 Justin Parisio™"} offset={0.6} />
         </p>

@@ -1,7 +1,7 @@
+// filepath: /Users/justinparisio/Desktop/websites/New-Portfolio/src/app/layout.tsx
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-// import NavBar from "@/components/NavBar";
 
 const inter = Inter({
   variable: "--font-inter",
