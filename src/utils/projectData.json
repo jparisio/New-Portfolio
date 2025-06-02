@@ -18,7 +18,7 @@
   {
     "id": 3,
     "project": "Filmdle",
-    "category": "Dev",
+    "category": "Web Dev",
     "client": "Personal",
     "year": "2023",
     "link": "https://github.com/jparisio/filmdle"
@@ -26,7 +26,7 @@
   {
     "id": 4,
     "project": "Holo",
-    "category": "Dev",
+    "category": "Mobile Dev",
     "client": "Group",
     "year": "2024",
     "link": "https://github.com/jparisio/holo"
@@ -34,7 +34,7 @@
   {
     "id": 5,
     "project": "Altern",
-    "category": "Dev",
+    "category": "Full Stack",
     "client": "Personal",
     "year": "2025",
     "link": "https://github.com/jparisio/altern"
@@ -50,7 +50,7 @@
   {
     "id": 7,
     "project": "Game Demo",
-    "category": "Dev",
+    "category": "Game Dev",
     "client": "Personal",
     "year": "2024",
     "link": "https://github.com/jparisio/Game-Demo-project-S-"
