@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <motion.main className="flex min-h-screen flex-col items-center justify-center p-24 ">
       <NavBar />
-      <h1 className="text-8xl text-center">
+      <h1 className="text-8xl md:text-8xl lg:text-9xl text-center">
         <AnimText text={"JUSTIN PARISIO"} offset={0.4} />
       </h1>
       <p className="uppercase text-sm md:text-base lg:text-lg xl:text-xl mt-5 text-center max-w-2xl">
