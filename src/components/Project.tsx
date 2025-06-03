@@ -123,17 +123,18 @@ export default function Project({ project, index }: ProjectProps) {
         />
 
         {/* Content Grid - Mobile: 2 cols, Desktop: 4 cols */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8 items-center relative z-10 px-5 md:px-24">
+        {/* Content Grid - Mobile: 2 cols, Desktop: 4 cols */}
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-2 md:gap-8 items-center relative z-10 px-2 md:px-24">
           {/* Project Name */}
-          <div className="col-span-1">
+          <div className="col-span-1 md:col-span-1">
             <motion.div
-              className="group-hover:text-black transition-colors duration-200 whitespace-nowrap overflow-hidden text-ellipsis"
+              className="group-hover:text-black transition-colors duration-200 overflow-hidden text-ellipsis"
               animate={titleControls}
             >
               <AnimText
                 text={project.project}
                 offset={0.1 + index * 0.05}
-                extraClass="font-medium whitespace-nowrap"
+                extraClass="font-medium text-sm md:text-base"
               />
             </motion.div>
           </div>
@@ -163,13 +164,13 @@ export default function Project({ project, index }: ProjectProps) {
           {/* Year */}
           <div className="col-span-1 text-right">
             <motion.div
-              className="text-gray-600 group-hover:text-black transition-colors duration-200 whitespace-nowrap"
+              className="text-gray-600 group-hover:text-black transition-colors duration-200"
               animate={yearControls}
             >
               <AnimText
                 text={project.year}
                 offset={0.25 + index * 0.05}
-                extraClass="whitespace-nowrap"
+                extraClass="text-sm md:text-base"
               />
             </motion.div>
           </div>
