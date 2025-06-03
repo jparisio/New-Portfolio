@@ -33,9 +33,10 @@ export default function AnimText({
                 },
               }}
               exit={{
-                y: 0,
+                y: "-100%", // Changed from y: 0 to y: "-100%"
                 transition: {
-                  duration: 1.2,
+                  delay: (words.length - index - 1) * 0.01, // Reverse delay for exit
+                  duration: 0.6, // Faster exit
                   ease,
                 },
               }}

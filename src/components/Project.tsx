@@ -1,4 +1,4 @@
-"use client";
+// "use client";
 
 import { useRef, MouseEvent } from "react";
 // import { useRouter } from "next/navigation";
