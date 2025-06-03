@@ -4,7 +4,10 @@ import AnimText from "./AnimText";
 
 export default function NavBar() {
   return (
-    <nav className="fixed top-0 left-0 w-full shadow-md z-50">
+    <nav
+      className="fixed top-0 left-0 w-full shadow-md z-50 "
+      style={{ backgroundColor: "#0f0e0e" }}
+    >
       <div className="w-full px-5 py-5 flex justify-between items-center">
         <ul>
           <li>

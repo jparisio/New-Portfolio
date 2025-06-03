@@ -1,7 +1,4 @@
-// "use client";
-
 import { useRef, MouseEvent } from "react";
-// import { useRouter } from "next/navigation";
 import { motion, useAnimation } from "framer-motion";
 import AnimText from "./AnimText";
 
@@ -24,7 +21,6 @@ export default function Project({ project, index }: ProjectProps) {
   const titleControls = useAnimation();
   const yearControls = useAnimation();
   const linkRef = useRef<HTMLDivElement>(null);
-  //   const router = useRouter();
 
   const handleMouseEnter = (e: MouseEvent) => {
     if (!linkRef.current) return;

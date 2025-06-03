@@ -9,9 +9,10 @@ export default function App({ Component, pageProps }: AppProps) {
 
   return (
     <>
-      <NavBar />
       <AnimatePresence mode="wait">
         <motion.div key={router.asPath}>
+          <NavBar />
+
           <Component {...pageProps} />
         </motion.div>
       </AnimatePresence>
