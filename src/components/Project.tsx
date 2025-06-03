@@ -75,79 +75,106 @@ export default function Project({ project, index }: ProjectProps) {
   };
 
   return (
-    <motion.div
-      ref={linkRef}
-      className="relative w-full cursor-pointer border-b border-gray-300 py-4 overflow-hidden group"
-      initial={{ x: "-100%", opacity: 0 }}
-      animate={{ x: 0, opacity: 1 }}
-      transition={{
-        duration: 1.2,
-        delay: index * 0.1 + 0.5,
-        ease: [0.25, 1, 0.5, 1],
-      }}
-      onMouseEnter={handleMouseEnter}
-      onMouseLeave={handleMouseLeave}
-      onClick={handleClick}
-    >
-      {/* Animated Background Layer */}
+    <div className="relative w-full cursor-pointer overflow-hidden group">
+      {/* Animated Border Line */}
       <motion.div
-        className="absolute inset-0 bg-white z-0"
-        style={{ top: "-100%", height: "100%" }}
-        animate={bgControls}
+        className="w-full border-b border-gray-300"
+        initial={{ scaleX: 0 }}
+        animate={{
+          scaleX: 1,
+          transition: {
+            duration: 1.2,
+            delay: index * 0.1 + 0.5,
+            ease: [0.25, 1, 0.5, 1],
+          },
+        }}
+        exit={{
+          scaleX: 0,
+          transition: {
+            duration: 1.2,
+            delay: index * 0.1,
+            ease: [0.25, 1, 0.5, 1],
+          },
+        }}
+        style={{ originX: 0 }}
       />
 
-      {/* Content Grid - Mobile: 2 cols, Desktop: 4 cols */}
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8 items-center relative z-10 px-5 md:px-24">
-        {/* Project Name */}
-        <div className="col-span-1">
-          <motion.div
-            className="group-hover:text-black transition-colors duration-200 whitespace-nowrap overflow-hidden text-ellipsis"
-            animate={titleControls}
-          >
-            <AnimText
-              text={project.project}
-              offset={0.1 + index * 0.05}
-              extraClass="font-medium whitespace-nowrap"
-            />
-          </motion.div>
-        </div>
+      {/* Content Container */}
+      <motion.div
+        ref={linkRef}
+        className="relative w-full cursor-pointer py-4 overflow-hidden"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+        transition={{
+          duration: 0.8,
+          delay: index * 0.1 + 0.7,
+          ease: [0.25, 1, 0.5, 1],
+        }}
+        onMouseEnter={handleMouseEnter}
+        onMouseLeave={handleMouseLeave}
+        onClick={handleClick}
+      >
+        {/* Animated Background Layer */}
+        <motion.div
+          className="absolute inset-0 bg-white z-0"
+          style={{ top: "-100%", height: "100%" }}
+          animate={bgControls}
+        />
 
-        {/* Category - Hidden on mobile */}
-        <div className="col-span-1 hidden md:block">
-          <div className="text-gray-600 group-hover:text-black transition-colors duration-200 whitespace-nowrap overflow-hidden text-ellipsis">
-            <AnimText
-              text={project.category}
-              offset={0.15 + index * 0.05}
-              extraClass="whitespace-nowrap"
-            />
+        {/* Content Grid - Mobile: 2 cols, Desktop: 4 cols */}
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8 items-center relative z-10 px-5 md:px-24">
+          {/* Project Name */}
+          <div className="col-span-1">
+            <motion.div
+              className="group-hover:text-black transition-colors duration-200 whitespace-nowrap overflow-hidden text-ellipsis"
+              animate={titleControls}
+            >
+              <AnimText
+                text={project.project}
+                offset={0.1 + index * 0.05}
+                extraClass="font-medium whitespace-nowrap"
+              />
+            </motion.div>
+          </div>
+
+          {/* Category - Hidden on mobile */}
+          <div className="col-span-1 hidden md:block">
+            <div className="text-gray-600 group-hover:text-black transition-colors duration-200 whitespace-nowrap overflow-hidden text-ellipsis">
+              <AnimText
+                text={project.category}
+                offset={0.15 + index * 0.05}
+                extraClass="whitespace-nowrap"
+              />
+            </div>
+          </div>
+
+          {/* Client - Hidden on mobile */}
+          <div className="col-span-1 hidden md:block">
+            <div className="text-gray-600 group-hover:text-black transition-colors duration-200 whitespace-nowrap overflow-hidden text-ellipsis">
+              <AnimText
+                text={project.client}
+                offset={0.2 + index * 0.05}
+                extraClass="whitespace-nowrap"
+              />
+            </div>
+          </div>
+
+          {/* Year */}
+          <div className="col-span-1 text-right">
+            <motion.div
+              className="text-gray-600 group-hover:text-black transition-colors duration-200 whitespace-nowrap"
+              animate={yearControls}
+            >
+              <AnimText
+                text={project.year}
+                offset={0.25 + index * 0.05}
+                extraClass="whitespace-nowrap"
+              />
+            </motion.div>
           </div>
         </div>
-
-        {/* Client - Hidden on mobile */}
-        <div className="col-span-1 hidden md:block">
-          <div className="text-gray-600 group-hover:text-black transition-colors duration-200 whitespace-nowrap overflow-hidden text-ellipsis">
-            <AnimText
-              text={project.client}
-              offset={0.2 + index * 0.05}
-              extraClass="whitespace-nowrap"
-            />
-          </div>
-        </div>
-
-        {/* Year */}
-        <div className="col-span-1 text-right">
-          <motion.div
-            className="text-gray-600 group-hover:text-black transition-colors duration-200 whitespace-nowrap"
-            animate={yearControls}
-          >
-            <AnimText
-              text={project.year}
-              offset={0.25 + index * 0.05}
-              extraClass="whitespace-nowrap"
-            />
-          </motion.div>
-        </div>
-      </div>
-    </motion.div>
+      </motion.div>
+    </div>
   );
 }
