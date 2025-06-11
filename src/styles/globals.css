@@ -1,5 +1,13 @@
 @import "tailwindcss";
 
+@font-face {
+  font-family: "Switzer";
+  src: url("/Switzer/Switzer-Variable.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
   --background: #0f0e0e;
   --foreground: #ffff;
@@ -15,5 +23,5 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: "Inter", Helvetica, sans-serif;
+  font-family: "Switzer", Helvetica, sans-serif;
 }
