@@ -113,7 +113,7 @@ export default function Project({ project, index }: ProjectProps) {
       >
         {/* Animated Background Layer */}
         <motion.div
-          className="absolute inset-0 bg-white z-0"
+          className="absolute inset-0 bg-foreground z-0"
           style={{ top: "-100%", height: "100%" }}
           animate={bgControls}
         />
