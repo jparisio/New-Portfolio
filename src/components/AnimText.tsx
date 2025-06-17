@@ -20,10 +20,10 @@ export default function AnimText({
     <>
       {words.map((word: string, index: number) => (
         <React.Fragment key={`${word}-${index}`}>
-          <span className="inline-block overflow-hidden leading-none">
+          <span className="inline-block overflow-hidden leading-none py-0.5">
             <motion.span
               className={`inline-block whitespace-nowrap ${extraClass}`}
-              initial={{ y: "100%" }}
+              initial={{ y: "120%" }}
               animate={{
                 y: 0,
                 transition: {
@@ -33,7 +33,7 @@ export default function AnimText({
                 },
               }}
               exit={{
-                y: "-110%",
+                y: "-120%",
                 transition: {
                   // delay: (words.length - , Reverse delay for exit
                   delay: index * 0.01,
