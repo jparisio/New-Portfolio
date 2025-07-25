@@ -10,9 +10,11 @@ export default function ProjectsPage() {
         <AnimText text="PROJECTS" offset={0.55} />
       </h1>
       <div className="mt-10 w-full max-w-4xl">
-        {projectData.map((project, index) => (
-          <Project key={project.id} project={project} index={index} />
-        ))}
+        {projectData
+          .sort((a, b) => parseInt(b.year) - parseInt(a.year))
+          .map((project, index) => (
+            <Project key={project.id} project={project} index={index} />
+          ))}
       </div>
     </main>
   );
