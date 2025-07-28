@@ -62,5 +62,13 @@
     "client": "Personal",
     "year": "2025",
     "link": "https://riot-careers.vercel.app"
+  },
+  {
+    "id": 9,
+    "project": "Dudes",
+    "category": "Mobile/Game Dev",
+    "client": "Personal",
+    "year": "2025",
+    "link": "https://apps.apple.com/ca/app/dudes/id6749192672"
   }
 ]
