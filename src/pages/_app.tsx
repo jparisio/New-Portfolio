@@ -1,8 +1,8 @@
 import type { AppProps } from "next/app";
 import { AnimatePresence, motion } from "framer-motion";
+import { useEffect } from "react";
 import { useRouter } from "next/router";
 import NavBar from "@/components/NavBar";
-import { useEffect } from "react";
 import Lenis from "lenis";
 import "../styles/globals.css";
 
@@ -28,15 +28,10 @@ export default function App({ Component, pageProps }: AppProps) {
 
   return (
     <>
-      <NavBar />
       <AnimatePresence mode="wait">
-        <motion.div
-          key={router.asPath}
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          exit={{ opacity: 0, y: -20 }}
-          transition={{ duration: 0.3, ease: "easeInOut" }}
-        >
+        <motion.div key={router.asPath}>
+          <NavBar />
+
           <Component {...pageProps} />
         </motion.div>
       </AnimatePresence>
