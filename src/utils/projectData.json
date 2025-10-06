@@ -3,7 +3,7 @@
     "id": 1,
     "project": "SPA Website",
     "category": "Full Stack",
-    "client": "SPA/SOLO",
+    "client": "Commercial",
     "year": "2025",
     "link": "https://www.serviceplusaquatics.com"
   },
@@ -51,9 +51,9 @@
     "id": 7,
     "project": "Game Demo",
     "category": "Game Dev",
-    "client": "Personal",
+    "client": "Commercial",
     "year": "2024",
-    "link": "https://www.youtube.com/watch?v=ndpQz5A-CuQ"
+    "link": "https://japess.itch.io/minus-five"
   },
   {
     "id": 8,
